@@ -1,0 +1,22 @@
+# 模拟资源服务器
+server:
+  port: 9002
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://121.199.79.138:3306/security_authority?characterEncoding=UTF-8
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.jay.springsecurity.domain
+  configuration:
+    map-underscore-to-camel-case: true
+
+#资源服务器只提供公钥
+rsa:
+  key:
+    publicFilePath: /Users/Jay/Desktop/auth_key/id_key_rsa_pub #
+#logging:
+#  level:
+#    root: debug

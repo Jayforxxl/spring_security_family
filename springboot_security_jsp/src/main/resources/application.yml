@@ -1,0 +1,18 @@
+server:
+  port: 8080
+spring:
+  mvc:
+    view:
+      prefix: /pages/
+      suffix: .jsp
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://121.199.79.138:3306/security_authority?characterEncoding=UTF-8
+    username: root
+    password: 123456
+
+mybatis:
+  type-aliases-package: com.jay.springsecurity.domain
+  configuration:
+    map-underscore-to-camel-case: true
+
